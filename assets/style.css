@@ -1,0 +1,17 @@
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 2px;
+    color: white;
+    
+}
+
+#container {
+    padding: 100px;
+}
+
+body {
+    background-color: #e0f7fa;
+}
