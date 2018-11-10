@@ -206,33 +206,75 @@ $("#submit").on('click', function () {
 
 // var searchTerm;
 
-// var queryURL =  "https://api.nal.usda.gov/ndb/search/?format=json&q=" + searchTerm + "&sort=n&max=25&offset=0&api_key=V3cMPd35Q0UOLzXFZB2HDpmDPOr2zgbYTGBEgoc3";
+// var queryURL =  "https://api.nal.usda.gov/ndb/search/?format=json" + searchTerm &q="  + "&sort=n&max=25&offset=0&api_key=V3cMPd35Q0UOLzXFZB2HDpmDPOr2zgbYTGBEgoc3";
 
 //  $.get(queryURL, function (result) {
 //     console.log(result);
 
 // });
 
-/**
- * pulls information from the form and build the query URL
- * @returns {string} URL for USDA API based on form inputs
- */
+// /**
+//  * pulls information from the form and build the query URL
+//  * @returns {string} URL for USDA API based on form inputs
+//  */
 
-function buildQueryUrL() {
-    var queryURL = "https://api.nal.usda.gov/ndb/search/?format=json&";
 
-    var queryParams = { "api-key": "V3cMPd35Q0UOLzXFZB2HDpmDPOr2zgbYTGBEgoc3" };
 
-    queryParams.q = $("#search-term");
-    .val()
-    .trim();
+// var $articleList = $("<ul>");
+// $articleList.addClass("list-group");
 
-    console.log("---------------\nURL: " + queryURL + "\n---------------");
-    console.log(queryURL + $.param(queryParams));
-}
+// // Add the newly created element to the DOM
 
-/**
- * takes API data (JSON/object) and turns it into elements on the page
- * @param {object} USDAdata - object containing NYT API data
- */
 
+// // // .on("click") function associated with the Search Button
+// // $("#find-facts").on("click", function(event) {
+// //     // This line allows us to take advantage of the HTML "submit" property
+// //     // This way we can hit enter on the keyboard and it registers the search
+// //     // (in addition to clicks). Prevents the page from reloading on form submit.
+// //     event.preventDefault();
+  
+// //     // Empty the region associated with the articles
+// //     clear();
+  
+// //     // Build the query URL for the ajax request to the NYT API
+// //     var queryURL = "https://api.nal.usda.gov/ndb/search/?format=json" + searchTerm + "&q=" + "&sort=n&max=25&offset=0&api_key=V3cMPd35Q0UOLzXFZB2HDpmDPOr2zgbYTGBEgoc3";
+  
+// //     // Make the AJAX request to the API - GETs the JSON data at the queryURL.
+// //     // The data then gets passed as an argument to the updatePage function
+// //     $.ajax({
+// //       url: queryURL,
+// //       method: "GET"
+// //     }).then(updatePage);
+// //   });
+
+
+//   $("#find-facts").on('click', function(){
+//     searchTerm = $('#search-term').val();
+
+// //function buildQueryUrL() {
+//    var queryURL = "https://api.nal.usda.gov/ndb/search/?format=json&q=butter&sort=n&max=25&offset=0&api_key=V3cMPd35Q0UOLzXFZB2HDpmDPOr2zgbYTGBEgoc3";
+// //    "https://api.nal.usda.gov/ndb/search/?format=json" + searchTerm + "&q=" + "&sort=n&max=25&offset=0&api_key=V3cMPd35Q0UOLzXFZB2HDpmDPOr2zgbYTGBEgoc3";
+   
+//    $.get(queryURL, function(result){
+//          console.log(result);
+//    });
+// });
+
+// $("#result-section").append($articleList);
+
+//     queryParams.q = $("#search-term");
+//     .val()
+//     .trim();
+
+//     console.log("---------------\nURL: " + queryURL + "\n---------------");
+//     console.log(queryURL + $.param(queryParams));
+// }
+
+// /**
+//  * takes API data (JSON/object) and turns it into elements on the page
+//  * @param {object} USDAdata - object containing NYT API data
+//  */
+
+$("#find-facts").on('click', function () {
+    $("table").show();
+});
