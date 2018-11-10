@@ -9,7 +9,7 @@
 
     <!--Import Google Icon Font-->
     <link type="text/css" rel="stylesheet" href="./assets/style.css" />
-    <link type="text/html" rel="stylesheet" href="goodrx.html"/>
+    <link type="text/html" rel="stylesheet" href="goodrx.html" />
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
@@ -19,53 +19,143 @@
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h1 align="center">Diagnosis</h1>
-            </div>  
-        </div>      
+                <h1 align="center">Diagnosis<img src="https://images.vexels.com/media/users/3/147758/isolated/preview/82e38ee75c17a68e56eb6e82b604deb7-doctor-stethoscope-icon-by-vexels.png" style="width:100px;height:100px;"></h1>
+            </div>
+        </div>
         <nav>
             <div class="nav-wrapper">
                 <a href="#!" class="brand-logo">One Stop Doc</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                       <li><a href="index.html">Diagnosis</a></li>
-                    <li><a href="goodrx.html">Price Comparisons</a></li>
+                    <li><a href="index.html">Diagnosis</a></li>
+                    <li><a href="usda.html">Nutrition Facts</a></li>
                 </ul>
             </div>
         </nav>
 
         <ul class="sidenav" id="mobile-demo">
             <li><a href="index.html">Diagnosis</a></li>
-            <li><a href="goodrx.html">Price Comparisons</a></li>
+            <li><a href="usda.html">Nutrition Facts</a></li>
         </ul>
 
         <div class="input-field col s12">
             <select multiple>
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <!--<option value= disabled selected>Choose Your option</option>-->
+                <option value="40">Nosebleed</option>
+                <option value="238">Anxiety</option>
+                <option value="131">Increased Appetite</option>
+                <option value="974">Aggressiveness</option>
+                <option value="54">Reduced Appetite</option>
+                <option value="250">Breathing-related Pains</option>
+                <option value="188">Abdominal Guarding</option>
+
             </select>
-            <label>Materialize Multiple Select</label>
+
         </div>
-        <button id="symptoms">get symptoms</button>
-        <input type="text" id="symptom" placeholder="symptom">
+
         <input type="text" id="gender" placeholder="gender">
-        <input type="text" name=""placeholder="birthYear" id="birthYear">
+        <input type="text" name="" placeholder="birthYear" id="birthYear">
         <button id="submit">Submit</button>
 
-        <div class="divider"></div>
-        <div class="section">
-            <h2>Section 1</h2>
-            <p>Stuff</p>
-        </div>
+        <table style="display: none">
+            <thead>
+                <tr>
+                    <th>Possible Issue</th>
+                    <th>Causes</th>
+                    <th>International Classification of Diseases</th>
+                    <th>Specialisation</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Diabetes</td>
+                    <td>Type 1 diabetes mellitus;
+                        <br>
+                        Type 2 diabetes mellitus;
+                        <br>
+                        Malnutrition-related diabetes mellitus;
+                        <br>
+                        Other specified diabetes mellitus;
+                        <br>
+                        Unspecified diabetes mellitus</td>
+                    <td>Diabetes mellitus</td>
+                    <td>Endocrinology</td>
+                </tr>
+                <tr>
+                    <td>Imbalance of body minerals</td>
+                    <td>Other disorders of fluid, electrolyte and acid-base balance</td>
+                    <td>Electrolyte imbalance</td>
+                    <td>General Practice</td>
+                </tr>
+                <tr>
+                    <td>Hypercortisolism</td>
+                    <td>Cushing syndrome</td>
+                    <td>Cushing's syndrome</td>
+                    <td>Internal medicine</td>
+                </tr>
+                <tr>
+                    <td>Drug side effect</td>
+                    <td>Unspecified adverse effect of drug or medicament</td>
+                    <td>Adverse drug reaction</td>
+                    <td>General Practice</td>
+                </tr>
+                <tr>
+                    <td>Disorder causing imbalance of water in the body</td>
+                    <td>Diabetes insipidus
+                        <br>
+                        Nephrogenic diabetes insipidus</td>
+                    <td>Diabetes insipidus</td>
+                    <td>Endocrinology</td>
+                </tr>
+                <tr>
+                    <td>Low blood pressure</td>
+                    <td>Hypotensio</td>
+                    <td>Hypotensio</td>
+                    <td>General Practice</td>
+                </tr>
+                <tr>
+                    <td>Renal failure</td>
+                    <td>Acute renal failure;Chronic kidney disease;
+                        <br>
+                        Unspecified kidney failure</td>
+                    <td>Renal insufficiency in women</td>
+                    <td>Nephrology</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     </div>
 
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">One Stop Doc</h5>
+                    
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Diagnosis</a></li>
+                        <li><a class="grey-text text-lighten-3" href="usda.html">Nutrition Facts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+            </div>
+        </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
+
     <script type="text/javascript" src="./assets/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  
+
 </body>
 
 </html>
